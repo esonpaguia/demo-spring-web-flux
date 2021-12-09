@@ -15,7 +15,7 @@ class MonoFluxTest {
 		monoString.subscribe(System.out::println, e -> System.out.println(e.getMessage()));
 	}
 	
-	@Test
+	//@Test
 	void testFlux( ) {
 		Flux<?> fluxString = Flux.just("Spring Core", "Spring MVC", "Spring Security")
 				.concatWithValues("GCP")
